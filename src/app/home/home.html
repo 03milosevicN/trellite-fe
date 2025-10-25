@@ -1,1 +1,26 @@
-<p>home works!</p>
+<app-header/>
+
+<main class="main d-flex justify-content-between">
+
+  <mat-card class="main-child-card" id="description-card" appearance="filled">
+    <mat-card-header>
+      <h1>Organize your work, from errands to enterprise.</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Out with clutter, in with performance.</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="button" class="btn btn-primary btn-right">Get started</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card class="main-child-card" id="image-card" appearance="filled">
+    <img class="card-image" ngSrc="images/card-picture-example.png" alt="card image" width="600" height="600"/>
+  </mat-card>
+
+</main>
+
+<app-home-details />
+
+<app-logging-and-chatting-details/>
+
+

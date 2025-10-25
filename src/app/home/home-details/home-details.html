@@ -1,0 +1,59 @@
+<main class="main">
+
+  <mat-card class="home-details-card-description" appearance="filled">
+    <mat-card-content>
+      <h2>Your productivity powerhouse</h2>
+      <p id="card-details-paragraph">
+        Stay organized and efficient with Projects, Lists and Cards.
+        Every to-do, idea, or responsibility—no matter how small—finds its place,
+        keeping you at the top of your game.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="main-wrapper">
+
+    <div class="home-details-card-content d-flex justify-content-between">
+
+      <div class="home-details-card-description-foo">
+        <mat-card class="home-details-card-description-card" appearance="outlined" (click)="onClickEvent('0')">
+          <mat-card-header><h3>Projects</h3></mat-card-header>
+          <mat-card-content>
+            <p>Project creation is as simple as clicking a button and naming it.</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="home-details-card-description-card" appearance="outlined" (click)="onClickEvent('1')">
+          <mat-card-header><h3>Lists</h3></mat-card-header>
+          <mat-card-content>
+            <p>Projects consist of Kanban boards. Lists are the main management flow and they hold what needs to be
+              done.</p>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="home-details-card-description-card" appearance="outlined" (click)="onClickEvent('2')">
+          <mat-card-header><h3>Cards</h3></mat-card-header>
+          <mat-card-content>
+            <p>Cards abstract your actions.</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="home-details-card-carousel d-flex align-items-center justify-content-center">
+        @if (tempImages.length > 0) {
+          <ngb-carousel class="ngb-carousel align-self-center">
+            @for (tempImage of tempImages; track tempImage; let idx = $index) {
+              <ng-template ngbSlide id="{{ idx.toString() }}">
+                <div class="img-wrapper">
+                  <img class="carousel-slide" ngSrc="/images/carousel/temp-{{tempImage}}.png"
+                       width="470" height="470" alt="slide-{{ idx + 1 }}"/>
+                </div>
+              </ng-template>
+            }
+          </ngb-carousel>
+        }
+      </div>
+
+    </div>
+  </div>
+</main>

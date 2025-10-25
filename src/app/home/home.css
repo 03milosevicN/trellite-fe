@@ -1,0 +1,14 @@
+.main {
+  margin: 40px;
+}
+.main-child-card {
+  width: 600px;
+  height: 600px;
+  background-color: #ffffff;
+}
+#image-card {
+  justify-content: end;
+}
+.btn-right {
+  margin-left: 8px;
+}
