@@ -1,0 +1,8 @@
+.container {
+  color: #ffffff;
+  width: 100%;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
