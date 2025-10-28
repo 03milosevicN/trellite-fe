@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import {Header} from './header/header';
+import {Header} from '../components/header/header';
 import {MatCard, MatCardActions, MatCardContent, MatCardHeader} from '@angular/material/card';
-import {NgOptimizedImage} from '@angular/common';
 import {HomeDetails} from './home-details/home-details';
 import {LoggingAndChattingDetails} from './logging-and-chatting-details/logging-and-chatting-details';
-import {Footer} from './footer/footer';
+import {Footer} from '../components/footer/footer';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +13,6 @@ import {Footer} from './footer/footer';
     MatCardContent,
     MatCardActions,
     MatCardHeader,
-    NgOptimizedImage,
     HomeDetails,
     LoggingAndChattingDetails,
     Footer

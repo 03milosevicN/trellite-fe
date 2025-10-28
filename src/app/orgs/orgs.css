@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sidenav-container {
+  width: 25%;
+  border: 1px solid #1e1e2e;
+
+  height: fit-content;
+}
+.container-fluid {
+  margin-top: 10px;
+}
+
+.navbar-title-paragraph {
+  margin: 20px;
+}
+
+
+.orgs-container {
+  border: 1px solid green;
+  width: 100%;
+  padding: 20px;
+
+  height: fit-content;
+}

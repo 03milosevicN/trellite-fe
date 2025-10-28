@@ -1,0 +1,30 @@
+.navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: auto;
+}
+.navbar-brand p {
+  margin: 0;
+}
+
+.nav-item-profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
